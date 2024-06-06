@@ -1,0 +1,256 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eae9e9;
+    height: '100%'
+}
+
+/* * {
+    scrollbar-width: none;
+} */
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+.comment-input {
+    width: 70%;
+    margin: 0 10px;
+    border-radius: 15px;
+    background: transparent;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(220, 219, 219);
+    color: gray
+}
+
+.comment-btn {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgb(228, 226, 226);
+    background: #496df1;
+    color: #fff;
+    border: 1px solid rgb(220, 219, 219);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav-header {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-link{
+    margin:0 5px
+}
+.location{
+    border-bottom: 5px solid rgb(164, 2, 2);
+    border-radius: 2px;
+}
+
+.nav-icons {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.nav-icons svg {
+    font-size: 25px;
+}
+
+.nav-search form {
+    width: 90%;
+}
+
+.nav-search input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+}
+
+.nav-try {
+    margin: 0 10px;
+    text-transform: none;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 32px;
+    outline: none;
+    background: transparent;
+    padding: 3px 7px;
+}
+
+.sideNav-try {
+    text-transform: none;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 32px;
+    outline: none;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 5px;
+    height: 35px;
+    flex-grow: 1;
+}
+
+.sideNav {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 10px;
+
+}
+
+.sideNav form {
+    width: 90%;
+}
+
+.sideNav input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+/* login section */
+.login-box {
+    background: white;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 768px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-signup{
+    width: 50%;
+    margin: 5px 15px;
+}
+
+.signup-btn{
+    display: none;
+}
+
+.comming-soon{
+    width:1100px;
+}
+
+
+
+
+@media (min-width:769px) {
+    .nav-header {
+        width: 100%;
+
+    }
+
+    .sideNav {
+        display: none;
+    }
+
+    .sideNav-search {
+        display: none;
+
+    }
+
+}
+
+@media (min-width:1110px) {
+    .nav-header {
+        width: 1110px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:530px){
+
+    .login-signup{
+        width: 100%;
+        display: block;
+    }
+
+    .hidden-xs{
+        display: none;
+    }
+
+    .signup-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        border-top: 1px solid #e6dada ;
+    }
+
+    .signup-btn button{
+        padding: 10px 15px;
+        background-color: rgb(96, 212, 235);
+        border: none;
+        outline:none;
+        border-radius: 20px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:769px) {
+
+    .sideNav-search {
+        margin: 0 10px;
+        flex-grow: 1;
+        display: flex;
+        border-radius: 4px;
+        padding: 0 5px;
+        height: 35px;
+        align-items: center;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .nav-try {
+        display: none;
+    }
+
+    .login-box{
+        width: 100%;
+    }
+}
+
+@media (max-width:1100px){
+    .comming-soon{
+        width:100%;
+    }
+}
+
